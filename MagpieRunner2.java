@@ -19,9 +19,9 @@ public class MagpieRunner2 {
         while (true) {
             statement = in.nextLine().trim();
 
-            if (statement.equalsIgnoreCase("It's time to go to bed now!")) {
-               //  int x = (int) (Math.random() * 6) + 1;
-                   int x = 6;
+            if (statement.toLowerCase().contains("bed")) {
+                int x = (int) (Math.random() * 6) + 1;
+                  //  int x = 6; FOR TESTING PURPOSES
                 if (x == 6) {
 
                      System.out.println(RED + "i refuse to go to bed. i'm not tired... " + "(Energy " + x + ")" + RESET);
