@@ -73,7 +73,7 @@ public class Magpie2 {
             } else if (s.contains("scissors")) {
                 return playRPS("scissors");
             } else {
-                return "I don't know what that is! I only know rock, paper, and scissors. Let's try again later.";
+                return "I don't know what that is! I only know rock, paper, and scissors. lets play again!!!!!!!";
             }
         }
 
@@ -164,6 +164,8 @@ public class Magpie2 {
             return "Once upon a time... I forgot. Ask my mom!";
         } else if (s.contains("draw")) {
             return "I'm drawing a big, green dinosaur! RAWR!";
+        } else if (s.contains("ask")||s.contains("talk")){
+            return expandTalk();
         }
 
         response = getRandomResponse();
@@ -181,6 +183,12 @@ public class Magpie2 {
 
     private String opinion() {
         String[] randomRes = {"I agree", "I don't think so", "whatever", "No!!!", "Of course!", "I don't know", "Mommy says that too!"};
+        int whichResponse = (int) (Math.random() * randomRes.length);
+        return randomRes[whichResponse];
+    }
+
+    private String expandTalk() {
+        String[] randomRes = {"Give me a joke", "Ask more questions about me", "Let's play a game"};
         int whichResponse = (int) (Math.random() * randomRes.length);
         return randomRes[whichResponse];
     }
