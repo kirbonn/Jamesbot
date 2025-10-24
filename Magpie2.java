@@ -98,7 +98,7 @@ public class Magpie2 {
             return "That's a cool name! I'm James!";
         } else if (s.contains("name")) {
             return "My name is James. What's yours?";
-        } else if (s.contains("you think")) {
+        } else if (s.contains("agree")) {
             return opinion();
         
 
