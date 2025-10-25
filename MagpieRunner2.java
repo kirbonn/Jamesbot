@@ -20,7 +20,7 @@ public class MagpieRunner2 {
             statement = in.nextLine().trim();
 
             if (statement.toLowerCase().contains("bed")) {
-                int x = (int) (Math.random() * 6) + 1;
+                int x = (int) (Math.random() * 7);
                   //  int x = 6; FOR TESTING PURPOSES
                 if (x == 6) {
 
